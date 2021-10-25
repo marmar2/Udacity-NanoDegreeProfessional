@@ -13,7 +13,7 @@ document.getElementById('generate').addEventListener('click',()=>{
 		
 		const temperature = Math.round(myData.main.temp );
 		
-	postData('/add', {temp: temperature-273, date1: newDate, feeling:feelings});
+	postData('/add', {temp: temperature, date1: newDate, feeling:feelings});
 	
 	}).then(function(){
 		updateUI();
